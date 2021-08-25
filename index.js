@@ -2,13 +2,6 @@
 // algorithm to find start date and end date of current period relative to given contract bill start date and period:
 
 
-const bill_period_map = {
-'monthly' : 1, 
-'quarterly' : 3,
-'half-yearly' : 6, 
-'annual' : 12
-};
-
 // get the bill start date
 const bill_start_date = new Date('03-24-2021');
 const start_date_of_bill_start_month =  new Date(bill_start_date.getFullYear(), bill_start_date.getMonth(), 1);
@@ -24,6 +17,13 @@ const start_date_of_bill_start_month =  new Date(bill_start_date.getFullYear(), 
 }
 
 const findDaterageForCurrentPeriod = (start_date,bill_period) => {
+ 
+const bill_period_map = {
+'monthly' : 1, 
+'quarterly' : 3,
+'half-yearly' : 6, 
+'annual' : 12
+};
 
 // get current date
 const current_date = new Date();
