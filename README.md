@@ -1,4 +1,4 @@
-# DRIP-algorithm-javascript (Date Range in Period)
+# DRIP Algorithm Javascript (Date Range in Period)
 
 An Algorithm in JavaScript  for finding start date and end date of current period relative to given contract bill start date and period
 
