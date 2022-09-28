@@ -51,7 +51,7 @@ const findDaterageForCurrentPeriod = (start_date, bill_period) => {
       break;
   };
 
-  return { start: `${from_date}`, end: `${to_date}` };  //should return in prod { start: from_date,  end: to_date };
+  return { start: `${from_date}`, end: `${to_date}`, month_order: `${factor + 1}`, month_count: `${diff_value}` };  //should return in prod { start: from_date,  end: to_date };
 
 };
 
